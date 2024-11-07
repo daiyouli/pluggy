@@ -1,0 +1,674 @@
+[33mcommit ffe82bc11f13c6c616c22a46e9734704a6757075[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32maddTestcases[m[33m, [m[1;31morigin/addTestcases[m[33m)[m
+Author: atiamars <atiamars@163.com>
+Date:   Thu Nov 7 13:12:44 2024 +0800
+
+    test
+
+[33mcommit 06830847423441de6d802f7f54250b02937c4388[m
+Merge: 5b71718 91e58da
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Tue Jun 11 05:06:28 2024 +0200
+
+    Merge pull request #510 from pytest-dev/pre-commit-ci-update-config
+    
+    [pre-commit.ci] pre-commit autoupdate
+
+[33mcommit 91e58da9f79381be6a78e2399a41c69c1b9a1459[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Jun 10 22:23:39 2024 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.4.7 → v0.4.8](https://github.com/astral-sh/ruff-pre-commit/compare/v0.4.7...v0.4.8)
+    - [github.com/asottile/pyupgrade: v3.15.2 → v3.16.0](https://github.com/asottile/pyupgrade/compare/v3.15.2...v3.16.0)
+
+[33mcommit 5b7171825a68174f7e25f4a8e6de59bfa9983851[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue Jun 4 09:06:52 2024 +0200
+
+    [pre-commit.ci] pre-commit autoupdate (#509)
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.4.5 → v0.4.7](https://github.com/astral-sh/ruff-pre-commit/compare/v0.4.5...v0.4.7)
+    
+    Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+
+[33mcommit aff6f99ba91879a16e2bf943c6a5bfa810e5c335[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue May 28 00:08:05 2024 +0200
+
+    [pre-commit.ci] pre-commit autoupdate (#508)
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.4.4 → v0.4.5](https://github.com/astral-sh/ruff-pre-commit/compare/v0.4.4...v0.4.5)
+    
+    Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+
+[33mcommit 40148f482c6d90a2d88b945cdaf307f94bb12ca2[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue May 14 00:14:08 2024 +0200
+
+    [pre-commit.ci] pre-commit autoupdate (#507)
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.4.3 → v0.4.4](https://github.com/astral-sh/ruff-pre-commit/compare/v0.4.3...v0.4.4)
+    
+    Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+
+[33mcommit a0e9d3079cdc1b6658cfe05cff872b5577d69a10[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue May 7 07:28:53 2024 +0200
+
+    [pre-commit.ci] pre-commit autoupdate (#506)
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.4.2 → v0.4.3](https://github.com/astral-sh/ruff-pre-commit/compare/v0.4.2...v0.4.3)
+    
+    Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+
+[33mcommit 56085d7dd20aa200999c2c711e9dd9d1908cf577[m
+Merge: 313eace 93ac1e9
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Tue Apr 30 11:21:05 2024 +0300
+
+    Merge pull request #504 from bluetech/reraise
+    
+    result: keep original traceback and reraise with it
+
+[33mcommit 313eace19509f6d5cff75836cad12a58e895c07e[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Apr 29 20:34:44 2024 -0300
+
+    [pre-commit.ci] pre-commit autoupdate (#505)
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.4.1 → v0.4.2](https://github.com/astral-sh/ruff-pre-commit/compare/v0.4.1...v0.4.2)
+    - [github.com/pre-commit/mirrors-mypy: v1.9.0 → v1.10.0](https://github.com/pre-commit/mirrors-mypy/compare/v1.9.0...v1.10.0)
+    
+    Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+
+[33mcommit 93ac1e9c468c733fb632237836766795f647d755[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sun Apr 28 12:36:07 2024 +0300
+
+    result: keep original traceback and reraise with it
+    
+    The `Result` API allows the same exception to be raised multiple times.
+    In Python, `Exception.__traceback__` becomes longer everytime an
+    exception is raised. This means that on every raise, the exception's
+    traceback gets longer and longer.
+    
+    To prevent this, save the original traceback and always raise using it.
+    
+    Regressed in pluggy 1.1.0 (fbc444218c442dd8cbe29bd68cde8fea52b56baf).
+
+[33mcommit 480c975ebcacece75b43000cff7df07bc8afdf40[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sun Apr 28 12:32:55 2024 +0300
+
+    Remove useless `with_traceback` calls
+    
+    These do nothing, I was just confused.
+
+[33mcommit f16327f1dcb116c267bc4cf73427ddff6b0d3d49[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue Apr 23 13:11:25 2024 +0200
+
+    [pre-commit.ci] pre-commit autoupdate (#503)
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.4.0 → v0.4.1](https://github.com/astral-sh/ruff-pre-commit/compare/v0.4.0...v0.4.1)
+    
+    Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+
+[33mcommit 6e23b6d581b6cab69d3fe39d1a4d76cfbe47d24b[m
+Merge: 05d8172 367f932
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Sun Apr 21 13:39:28 2024 +0200
+
+    Merge pull request #500 from pytest-dev/dependabot/github_actions/actions/checkout-4
+    
+    build(deps): bump actions/checkout from 3 to 4
+
+[33mcommit 05d81727c0d3bfcee8a928aa86c0fd539ae61f0f[m
+Merge: e3b41ed 11a75a9
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Sun Apr 21 13:39:13 2024 +0200
+
+    Merge pull request #498 from pytest-dev/RonnyPfannschmidt-oidc-permissions
+    
+    add pypi trusted publishing permissions
+
+[33mcommit 11a75a96df9ed3411669a96ef117b8e06f6d538c[m
+Merge: c5ba2d8 e3b41ed
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Sun Apr 21 12:56:17 2024 +0200
+
+    Merge branch 'main' into RonnyPfannschmidt-oidc-permissions
+
+[33mcommit e3b41ed0a848509069453883a74d159fcbea8122[m
+Merge: 4d5b7f6 f74bbc4
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Sun Apr 21 12:55:39 2024 +0200
+
+    Merge pull request #502 from pytest-dev/dependabot/github_actions/actions/setup-python-5
+    
+    build(deps): bump actions/setup-python from 4 to 5
+
+[33mcommit 4d5b7f65f7481a41eb05c4dfeaaa7feafcdf8f70[m
+Merge: 6300b34 f8aa4a0
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sun Apr 21 08:56:59 2024 +0300
+
+    Merge pull request #497 from bluetech/release-1.5.0
+    
+    Preparing release 1.5.0
+
+[33mcommit 6300b34d4ac7c2de3d0c9966421d5f5bd3ee67bb[m
+Merge: de483cb 68750fb
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Sun Apr 21 00:34:41 2024 +0200
+
+    Merge pull request #501 from pytest-dev/dependabot/github_actions/pypa/gh-action-pypi-publish-1.8.14
+    
+    build(deps): bump pypa/gh-action-pypi-publish from 1.8.6 to 1.8.14
+
+[33mcommit f74bbc46dfd20c3e98723c14b959f4dc13b2b2fa[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Sat Apr 20 22:11:41 2024 +0000
+
+    build(deps): bump actions/setup-python from 4 to 5
+    
+    Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4 to 5.
+    - [Release notes](https://github.com/actions/setup-python/releases)
+    - [Commits](https://github.com/actions/setup-python/compare/v4...v5)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: actions/setup-python
+      dependency-type: direct:production
+      update-type: version-update:semver-major
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 68750fb9dd7976bfa29c8f2f0694fbb195bfbd3b[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Sat Apr 20 22:11:38 2024 +0000
+
+    build(deps): bump pypa/gh-action-pypi-publish from 1.8.6 to 1.8.14
+    
+    Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from 1.8.6 to 1.8.14.
+    - [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+    - [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/v1.8.6...v1.8.14)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: pypa/gh-action-pypi-publish
+      dependency-type: direct:production
+      update-type: version-update:semver-patch
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 367f9324c407f92e41d9ad273276f09e95ac162c[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Sat Apr 20 22:11:35 2024 +0000
+
+    build(deps): bump actions/checkout from 3 to 4
+    
+    Bumps [actions/checkout](https://github.com/actions/checkout) from 3 to 4.
+    - [Release notes](https://github.com/actions/checkout/releases)
+    - [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+    - [Commits](https://github.com/actions/checkout/compare/v3...v4)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: actions/checkout
+      dependency-type: direct:production
+      update-type: version-update:semver-major
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit de483cbe14f5d23342e7ee6f267ec3d39e823a4e[m
+Merge: 5216592 c69578c
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Sun Apr 21 00:11:16 2024 +0200
+
+    Merge pull request #499 from pytest-dev/RonnyPfannschmidt-dependabot
+    
+    Create dependabot.yml
+
+[33mcommit c69578c87773e42fffd47d5626c159cb8cf912ea[m
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Sat Apr 20 22:56:06 2024 +0200
+
+    Create dependabot.yml
+
+[33mcommit c5ba2d87f1153c61ae8e64e82d1d587f55093f30[m
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Sat Apr 20 22:48:14 2024 +0200
+
+    Update main.yml
+
+[33mcommit 52165925fa955e8b20fbedc61a685f3f2c78fc08[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Fri Apr 19 14:58:32 2024 +0200
+
+    [pre-commit.ci] pre-commit autoupdate (#494)
+    
+    
+    Co-authored-by: Pierre Sassoulas <pierre.sassoulas@gmail.com>
+
+[33mcommit f8aa4a009716a7994f2f6c1947d9fa69feccbdd5[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Fri Apr 19 15:43:52 2024 +0300
+
+    Preparing release 1.5.0
+
+[33mcommit b4a8c92fb15dc05376ddb9b48e601be00ee3ee1b[m
+Merge: 91f88d2 6f6ea68
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Fri Apr 19 15:33:00 2024 +0300
+
+    Merge pull request #495 from bluetech/warn-on-impl-args
+    
+    Add support deprecating hook parameters
+
+[33mcommit 6f6ea680ca5a1f73dca356eb23c0dd6bd5f7190e[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Thu Apr 18 21:47:35 2024 +0300
+
+    Add support deprecating hook parameters
+    
+    Fix #178.
+
+[33mcommit 91f88d28e30c12612d671100b7a60dfbf4990446[m
+Merge: 29f104d 89ce829
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Fri Apr 19 15:11:44 2024 +0300
+
+    Merge pull request #496 from bluetech/codecov-action
+    
+    ci: replace upload-coverage script with codecov github action
+
+[33mcommit 89ce829b44274569de83173867ce29828b620fe8[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Fri Apr 19 15:04:50 2024 +0300
+
+    ci: replace upload-coverage script with codecov github action
+    
+    Same as what pytest does, hopefully will fix coverage upload failures.
+
+[33mcommit 29f104d21f06f0bf1415a8e872657bc10a768954[m
+Author: Bruno Oliveira <nicoddemus@gmail.com>
+Date:   Mon Apr 8 13:59:11 2024 -0300
+
+    Lift pluggy (#493)
+    
+    This updates the docs now that `pluggy` is also on Tidelift.
+
+[33mcommit c2b36b44af5c2530813e18553b54158535d4820a[m
+Merge: 04d1bcd 2b533c9
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Tue Apr 2 08:41:33 2024 +0200
+
+    Merge pull request #491 from pytest-dev/pre-commit-ci-update-config
+    
+    [pre-commit.ci] pre-commit autoupdate
+
+[33mcommit 2b533c9d9f7421c9353aa32da967733bfe4c1c85[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Apr 1 22:13:37 2024 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.3.4 → v0.3.5](https://github.com/astral-sh/ruff-pre-commit/compare/v0.3.4...v0.3.5)
+
+[33mcommit 04d1bcdbc751a90ff79b72caf85dc96e1664ae45[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Mar 25 23:37:58 2024 +0100
+
+    [pre-commit.ci] pre-commit autoupdate (#490)
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.3.3 → v0.3.4](https://github.com/astral-sh/ruff-pre-commit/compare/v0.3.3...v0.3.4)
+    - [github.com/asottile/pyupgrade: v3.15.1 → v3.15.2](https://github.com/asottile/pyupgrade/compare/v3.15.1...v3.15.2)
+    
+    Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+
+[33mcommit f74e94b17d986c18e9039af87ecded9c9546ac32[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Tue Mar 19 11:08:34 2024 -0300
+
+    [pre-commit.ci] pre-commit autoupdate (#489)
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.3.2 → v0.3.3](https://github.com/astral-sh/ruff-pre-commit/compare/v0.3.2...v0.3.3)
+    - [github.com/PyCQA/autoflake: v2.3.0 → v2.3.1](https://github.com/PyCQA/autoflake/compare/v2.3.0...v2.3.1)
+    
+    Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+
+[33mcommit afb9f7514c6f4df8820eb714d8f7e8b2e925207e[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Wed Mar 13 06:57:04 2024 -0300
+
+    [pre-commit.ci] pre-commit autoupdate (#487)
+    
+    * [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/astral-sh/ruff-pre-commit: v0.2.2 → v0.3.2](https://github.com/astral-sh/ruff-pre-commit/compare/v0.2.2...v0.3.2)
+    - [github.com/pre-commit/mirrors-mypy: v1.8.0 → v1.9.0](https://github.com/pre-commit/mirrors-mypy/compare/v1.8.0...v1.9.0)
+    
+    * [pre-commit.ci] auto fixes from pre-commit.com hooks
+    
+    for more information, see https://pre-commit.ci
+    
+    ---------
+    
+    Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+
+[33mcommit c65e5d9824caa8c3f4c32d0050e9c248c27c4d8d[m
+Author: donghui <977675308@qq.com>
+Date:   Fri Mar 8 00:28:09 2024 +0800
+
+    docs: update plugins number to 1400+ (#486)
+
+[33mcommit 822c172c60871f369834caf45e65b1596db21645[m
+Merge: 8c2435d 445e29b
+Author: Pierre Sassoulas <pierre.sassoulas@gmail.com>
+Date:   Tue Feb 20 11:07:45 2024 +0100
+
+    Merge pull request #483 from Pierre-Sassoulas/black-upgrade
+    
+    Upgrade tools, apply black 2024's style inside blackendoc
+
+[33mcommit 8c2435d1f6c6ed3ab480a36ace652a416c168af4[m
+Merge: 4326ced 33ca1a9
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Tue Feb 20 11:40:37 2024 +0200
+
+    Merge pull request #482 from Pierre-Sassoulas/main
+    
+    Migrate from ``reorder-python-imports`` / ``black`` to ``ruff`` / ``isort``
+
+[33mcommit 4326ced299cc37f4abc57c22c6298362b5379602[m
+Author: Bruno Oliveira <nicoddemus@gmail.com>
+Date:   Mon Feb 19 20:58:14 2024 -0300
+
+    PluginManager.get_plugins no longer returns None for blocked plugins (#481)
+
+[33mcommit 445e29bd8b87b6e452699bf9b7f17c1418a8f6c1[m
+Author: Pierre Sassoulas <pierre.sassoulas@gmail.com>
+Date:   Mon Feb 19 23:08:49 2024 +0100
+
+    Upgrade tools, apply black 2024's style inside blackendoc
+
+[33mcommit 33ca1a945610dd405fa1b736bee42549303f2615[m
+Author: Pierre Sassoulas <pierre.sassoulas@gmail.com>
+Date:   Mon Feb 19 23:07:10 2024 +0100
+
+    Migrate from reorder-python-imports / black to ruff / isort
+
+[33mcommit 22485d139deaf544d100e10363afd169ddfd09db[m
+Author: Brian Hahn <beedub@users.noreply.github.com>
+Date:   Tue Feb 6 15:27:42 2024 -0800
+
+    Fix small typos in index.rst (#479)
+
+[33mcommit eae11efb8893ec498a298dc34e64dd1d98a4a619[m
+Merge: 253a624 0d0ddf5
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Wed Jan 31 21:08:03 2024 +0200
+
+    Merge pull request #478 from simonw/kedro-fix
+    
+    Fix broken Kedro hooks link
+
+[33mcommit 253a624e08c2d906c7cc736d7e6b210525da53df[m
+Author: Simon Willison <swillison@gmail.com>
+Date:   Wed Jan 31 11:06:41 2024 -0800
+
+    Clarify purpose of specname (#477)
+
+[33mcommit 0d0ddf5b00e7b0e3bfe8fc113a1640710c34aa4e[m
+Author: Simon Willison <swillison@gmail.com>
+Date:   Tue Jan 30 12:59:22 2024 -0800
+
+    Fix broken Kedro hooks link
+
+[33mcommit 7a6722bcaeff7ca79c72b845ea5366b11de82272[m
+Merge: ebeb2f2 2efd28e
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Wed Jan 24 15:47:58 2024 +0200
+
+    Merge pull request #474 from bluetech/release-1.4.0
+    
+    Preparing release 1.4.0
+
+[33mcommit 2efd28ef5dcd8b7ad44a41777ce640debbbf9c39[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Wed Jan 24 10:48:53 2024 +0200
+
+    Preparing release 1.4.0
+
+[33mcommit ebeb2f2e7865369e48d953c3dff1789d448f104e[m
+Merge: 3a28b4d 13b3661
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Wed Jan 24 10:27:50 2024 +0200
+
+    Merge pull request #471 from bluetech/unblock
+    
+    Add `PluginManager.unblock` method to unblock a name
+
+[33mcommit 3a28b4d7a6d07ff3b3263ac2909be804323f578c[m
+Merge: 4331b7a 3bc3aab
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sun Jan 21 12:46:15 2024 +0200
+
+    Merge pull request #464 from bluetech/hookwrapper-teardown-warning
+    
+    Warn when old-style hookwrapper raises during teardown
+
+[33mcommit 4331b7a164b6f0e79d2e64c8144e9bcb077f3a16[m
+Merge: cc36605 7aef3e6
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sun Jan 21 12:43:01 2024 +0200
+
+    Merge pull request #473 from bluetech/iterator-invalidation
+    
+    hooks: fix plugins registering other plugins in a hook
+
+[33mcommit 7aef3e608fddc57648daffaec23432e6893f26ff[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sat Jan 20 18:47:13 2024 +0200
+
+    hooks: fix plugins registering other plugins in a hook
+    
+    when the other plugins implement the same hook itself.
+    
+    Fix #438.
+    Regressed in 63b7e908b4b22c30d86cd2cff240b3b7aa6da596 - pluggy 1.1.0.
+    
+    Went with the simple solution described in the issue for now, basically
+    undoing most of the rationale for 63b7e908b4b22c30d86cd2cf (though I
+    think it's still better to have a single `_hookimpls` list).
+
+[33mcommit cc36605090dfa090777b3d69ca91132ad852c6f2[m
+Merge: 4b5b2d4 443fee6
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sat Jan 20 13:52:51 2024 +0200
+
+    Merge pull request #472 from bluetech/call-extra-ordering-fix
+    
+    Fix `call_extra` call ordering regression in pluggy 1.1.0
+
+[33mcommit 443fee6d7a30ca694aa2eec77bde4aea9356efa0[m
+Author: Vishu Tupili <vtupili@Vishus-MacBook.local>
+Date:   Wed Dec 13 13:37:09 2023 -0500
+
+    hooks: fix `call_extra` extra methods getting ordered before everything else
+    
+    when there is at least one wrapper impl.
+    
+    Fix #441.
+    Regressed in 63b7e908b4b22c30d86cd2cff240b3b7aa6da596 - pluggy 1.1.0.
+    
+    [ran: reworked]
+
+[33mcommit 4577b459a9043ba283e0d7a39beeddd627cc54a0[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sat Jan 20 12:58:24 2024 +0200
+
+    hooks: add comment describing `_hookimpls`'s format/invariants.
+
+[33mcommit 13b3661080cd3f6dcae1dedbceac6814b740c6dc[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sat Jan 13 10:39:11 2024 +0200
+
+    Add `PluginManager.unblock` method to unblock a name
+    
+    Pytest currently accesses internals to do this:
+    https://github.com/pytest-dev/pytest/blob/1b78de4e21d55983422e7327a51304ef0fc61679/src/_pytest/config/__init__.py#L740-L746
+    Let's provide a proper API for this.
+
+[33mcommit 4b5b2d4ede425742d99ebb6539c42517a4401dc0[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Thu Jan 11 19:25:30 2024 +0200
+
+    CHANGELOG: fix errors in 1.0.0 entry
+    
+    Refs #468.
+
+[33mcommit 0abac7520e060f479dbf84c0336b0dff23a14c9c[m
+Author: Bruno Oliveira <nicoddemus@gmail.com>
+Date:   Thu Jan 11 13:59:00 2024 -0300
+
+    Fix formatting in wrappers docs
+    
+    Noticed that part of the text is not being formatted correctly in readthedocs.
+
+[33mcommit 29912d77ba24aa4ddfb3d9ff1e9d8a4a783e56b6[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Dec 25 20:43:34 2023 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/psf/black: 23.12.0 → 23.12.1](https://github.com/psf/black/compare/23.12.0...23.12.1)
+    - [github.com/pre-commit/mirrors-mypy: v1.7.1 → v1.8.0](https://github.com/pre-commit/mirrors-mypy/compare/v1.7.1...v1.8.0)
+
+[33mcommit 3bdfcacd6f871149710b1dc63e1f1ad669dfd351[m
+Merge: e474438 59e0ca3
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Tue Dec 26 16:50:06 2023 +0200
+
+    Merge pull request #466 from bluetech/defer-importlib-metadata
+    
+    Defer loading of importtlib.metadata
+
+[33mcommit 59e0ca3d7a35e60bdd769cfd97678b801b9472a4[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Sun Dec 24 12:53:52 2023 +0200
+
+    Defer loading of importtlib.metadata
+    
+    This package is needed for `load_setuptools_entrypoints`, but it is
+    quite slow to import. While most users do use
+    `load_setuptools_entrypoints`, maybe some don't, so let's let them avoid
+    the cost.
+    
+    For `import pluggy`:
+    Before: 36ms
+    After:  11ms
+
+[33mcommit 3bc3aab681d8c17536fe0a952ad571e3fac5c27e[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Thu Dec 21 12:32:27 2023 +0200
+
+    Warn when old-style hookwrapper raises during teardown
+    
+    Fix #463.
+
+[33mcommit d3877d47a0cd2a142c9d63c97c46d73b97d1b423[m
+Author: Ran Benita <ran@unusedvar.com>
+Date:   Thu Dec 21 12:31:52 2023 +0200
+
+    Move `_raise_wrapfail` to callers.py
+    
+    It's only used there.
+
+[33mcommit e474438efb2306cca47162a7f115009d8ade9e7f[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Dec 18 21:01:07 2023 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/psf/black: 23.11.0 → 23.12.0](https://github.com/psf/black/compare/23.11.0...23.12.0)
+
+[33mcommit 82d4e1ce62e11a76b9d050e457adc41c4c69f7db[m
+Merge: 3396f7b 94ec1b5
+Author: Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+Date:   Mon Nov 27 22:24:11 2023 +0100
+
+    Merge pull request #459 from pytest-dev/pre-commit-ci-update-config
+    
+    [pre-commit.ci] pre-commit autoupdate
+
+[33mcommit 94ec1b5125ebb9bec2dd05e2b6210f53e83b0c2c[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Nov 27 20:21:10 2023 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/pre-commit/mirrors-mypy: v1.7.0 → v1.7.1](https://github.com/pre-commit/mirrors-mypy/compare/v1.7.0...v1.7.1)
+
+[33mcommit 3396f7bf88ed2a7dcbfc44abf1647b135cee1282[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Nov 13 21:00:46 2023 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/psf/black: 23.10.1 → 23.11.0](https://github.com/psf/black/compare/23.10.1...23.11.0)
+    - [github.com/pre-commit/mirrors-mypy: v1.6.1 → v1.7.0](https://github.com/pre-commit/mirrors-mypy/compare/v1.6.1...v1.7.0)
+
+[33mcommit 46fec3f17869dafa21accab7835bdd36871ecd04[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Oct 23 20:52:30 2023 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/psf/black: 23.9.1 → 23.10.1](https://github.com/psf/black/compare/23.9.1...23.10.1)
+    - [github.com/pre-commit/mirrors-mypy: v1.6.0 → v1.6.1](https://github.com/pre-commit/mirrors-mypy/compare/v1.6.0...v1.6.1)
+
+[33mcommit c73880f31409af3fe0d0c38368b5a5baaebdb1b8[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Oct 16 20:24:09 2023 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/pre-commit/mirrors-mypy: v1.5.1 → v1.6.0](https://github.com/pre-commit/mirrors-mypy/compare/v1.5.1...v1.6.0)
+
+[33mcommit 1c906c93492f9632b23f7ad6f5bb7ef9cceb44cb[m
+Author: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+Date:   Mon Oct 9 20:59:11 2023 +0000
+
+    [pre-commit.ci] pre-commit autoupdate
+    
+    updates:
+    - [github.com/asottile/pyupgrade: v3.14.0 → v3.15.0](https://github.com/asottile/pyupgrade/compare/v3.14.0...v3.15.0)
+
+[33mcommit 718c27e757723c371ebf8b2dbc1a1b5374887d91[m
+Author: Bill Huneke <wahuneke@gmail.com>
+Date:   Thu Sep 28 19:19:19 2023 -0400
+
+    Fix a few more git branch renames (master -> main)
